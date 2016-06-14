@@ -1,0 +1,163 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'forever', '-g' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'forever', null ]
+7 verbose cache add spec forever
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'forever',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'forever',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed forever@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for forever
+11 info addNameTag [ 'forever', 'latest' ]
+12 silly mapToRegistry name forever
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/forever
+16 verbose addNameTag registry:https://registry.npmjs.org/forever not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/forever
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 1:16:20 AM
+20 verbose request id 5da76a6ffca22b08
+21 verbose etag "88ZVEHGCNB5FU5V1V025QIHKQ"
+22 http request GET https://registry.npmjs.org/forever
+23 http 304 https://registry.npmjs.org/forever
+24 verbose headers { date: 'Tue, 01 Mar 2016 01:16:19 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"88ZVEHGCNB5FU5V1V025QIHKQ"',
+24 verbose headers   age: '145',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-nrt6131-NRT',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1456794979.102305,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 01 Mar 2016 01:16:19 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"88ZVEHGCNB5FU5V1V025QIHKQ"',
+25 silly get     age: '145',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-nrt6131-NRT',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1456794979.102305,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/forever from cache
+27 verbose get saving forever to /home/webdev/.npm/registry.npmjs.org/forever/.cache.json
+28 silly addNameTag next cb for forever with tag latest
+29 silly addNamed forever@0.15.1
+30 verbose addNamed "0.15.1" is a plain semver version for forever
+31 silly cache afterAdd forever@0.15.1
+32 verbose afterAdd /home/webdev/.npm/forever/0.15.1/package/package.json not in flight; writing
+33 verbose afterAdd /home/webdev/.npm/forever/0.15.1/package/package.json written
+34 silly install resolved [ { name: 'forever',
+34 silly install resolved     preferGlobal: 'true',
+34 silly install resolved     description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+34 silly install resolved     version: '0.15.1',
+34 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+ssh://git@github.com/nodejitsu/forever.git' },
+34 silly install resolved     keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+34 silly install resolved     dependencies:
+34 silly install resolved      { cliff: '~0.1.9',
+34 silly install resolved        clone: '^1.0.2',
+34 silly install resolved        colors: '~0.6.2',
+34 silly install resolved        flatiron: '~0.4.2',
+34 silly install resolved        'forever-monitor': '~1.6.0',
+34 silly install resolved        nconf: '~0.6.9',
+34 silly install resolved        nssocket: '~0.5.1',
+34 silly install resolved        'object-assign': '^3.0.0',
+34 silly install resolved        optimist: '~0.6.0',
+34 silly install resolved        'path-is-absolute': '~1.0.0',
+34 silly install resolved        prettyjson: '^1.1.2',
+34 silly install resolved        shush: '^1.0.0',
+34 silly install resolved        timespan: '~2.3.0',
+34 silly install resolved        utile: '~0.2.1',
+34 silly install resolved        winston: '~0.8.1' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { broadway: '~0.3.6',
+34 silly install resolved        eventemitter2: '0.4.x',
+34 silly install resolved        request: '2.x.x',
+34 silly install resolved        vows: '0.7.x' },
+34 silly install resolved     bin: { forever: './bin/forever' },
+34 silly install resolved     main: './lib/forever',
+34 silly install resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+34 silly install resolved     engines: { node: '>= 0.8.x' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     gitHead: '6c157fafe909eb555b9e73028338377b05d51f51',
+34 silly install resolved     bugs: { url: 'https://github.com/nodejitsu/forever/issues' },
+34 silly install resolved     homepage: 'https://github.com/nodejitsu/forever',
+34 silly install resolved     _id: 'forever@0.15.1',
+34 silly install resolved     _shasum: '5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e',
+34 silly install resolved     _from: 'forever@latest',
+34 silly install resolved     _npmVersion: '2.6.1',
+34 silly install resolved     _nodeVersion: '0.10.40',
+34 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/forever/-/forever-0.15.1.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/forever/-/forever-0.15.1.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install forever@0.15.1 into /usr/lib
+36 info installOne forever@0.15.1
+37 verbose installOne of forever to /usr/lib not in flight; installing
+38 verbose lock using /home/webdev/.npm/_locks/forever-489122e4731fc537.lock for /usr/lib/node_modules/forever
+39 silly install write writing forever 0.15.1 to /usr/lib/node_modules/forever
+40 verbose unbuild lib/node_modules/forever
+41 silly gentlyRm /usr/lib/node_modules/forever is being purged from base /usr
+42 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/forever
+43 verbose tar unpack /home/webdev/.npm/forever/0.15.1/package.tgz
+44 verbose tar unpacking to /usr/lib/node_modules/forever
+45 silly gentlyRm /usr/lib/node_modules/forever is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/forever
+47 silly gunzTarPerm modes [ '775', '664' ]
+48 error tar.unpack untar error /home/webdev/.npm/forever/0.15.1/package.tgz
+49 verbose unlock done using /home/webdev/.npm/_locks/forever-489122e4731fc537.lock for /usr/lib/node_modules/forever
+50 verbose fstream_path /usr/lib/node_modules/forever
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/forever'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /home/webdev/MTA/Chat_app
+56 error Linux 3.13.0-74-generic
+57 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "forever" "-g"
+58 error node v4.3.1
+59 error npm  v2.14.12
+60 error path /usr/lib/node_modules/forever
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/forever'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/forever']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/lib/node_modules/forever',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/lib/node_modules/forever',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/forever
+68 silly gentlyRm /usr/lib/node_modules/forever is being purged from base /usr
+69 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/forever

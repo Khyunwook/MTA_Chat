@@ -1,0 +1,211 @@
+/*
+    mta.chat.css
+    Chat feature styles
+*/
+
+.mta-chat{
+    position    :   absolute;
+    top			:   40px;
+    bottom      :   0;
+    right		:   0;
+    width       :   15px;
+    /*	width 		:	15px;*/
+    background	:	white;
+    border-radius:  5px 0 0 5px;
+    border-style :  solid;
+    border-width :  thin thin thin thin;
+    border-color :  #888;
+    z-index     :   1;
+}
+
+.mta-chat-head{
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    bottom      : 0;
+    width       : 50px;
+    background  : white;
+
+    border-style : solid;
+    border-radius: 5px 0 0 5px;
+    border-width : 0 thin thin 0;
+    border-color : #888;
+}
+
+.mta-chat-head-toggle{
+    position    : absolute;
+    top         : 0px;
+    left        : 0px;
+    width       : 50px;
+    height      : 30px;
+    border-radius : 5px 0 0 0;
+    cursor      : pointer;
+}
+    .mta-chat-head-toggle:hover{
+        background :lightgray;
+        border-style : solid;
+        border-width : 0 thin thin 0;
+    }
+.mta-chat-head-nav{
+    position    : absolute;
+    left        : 0;
+    right       : 0;
+    top         : 40%;
+    height      : 150px;
+    border-style : solid;
+    border-width : thin 0 thin 0;
+}
+.mta-chat-head-nav-flist{
+    position    : absolute;
+    top         : 30px;
+    left        : 0;
+    right       : 0;
+    height      : 45px;
+}
+    .mta-chat-head-nav-flist:hover{
+        background-color : lightgray;
+    }
+.mta-chat-head-nav-chatlist{
+    position    : absolute;
+    bottom      : 30px;
+    left        : 0;
+    right       : 0;
+    height      : 45px;
+}
+.mta-chat-head-nav-chatlist:hover{
+    background-color : lightgray;
+}
+
+.mta-chat-content{
+    position    : absolute;
+    top         : 0;
+    right       : 0;
+    bottom      : 0;
+    left        : 50px;
+}
+
+.mta-chat-content-flist, .mta-chat-content-chatlist, .mta-chat-content-chatw{
+    position    : absolute;
+    top         : 0;
+    right       : 0;
+    bottom      : 0;
+    left        : 0;
+    background  : ghostwhite ;
+}
+
+.mta-chat-content-flist-head, .mta-chat-content-chatlist-head, .mta-chat-content-chatw-head{
+    position    : absolute;
+    top         : 0;
+    right       : 0;
+    left        : 0;
+    height      : 30px;
+    border-style : solid;
+    border-width : 0 0 thin 0;
+}
+.mta-chat-content-flist-head p{
+
+    text-align : center;
+    font-size:14px;
+    color:black;
+    font-family:orbitron;
+}
+
+.mta-chat-content-chatlist, .mta-chat-content-chatw{
+    left       : 300px;
+}
+.mta-chat-content-flist-box, .mta-chat-content-chatlist-box, .mta-chat-content-chatw-sizer{
+    position    : absolute;
+    top         : 30px;
+    right       : 0;
+    left        : 0;
+    bottom      : 0;
+
+}
+.mta-chat-flist-name{
+    position: relative;
+    border-style : solid;
+    height : 40px;
+    border-width : thin thin thin thin;
+    cursor : pointer;
+    background  : white;
+}
+    .mta-chat-flist-name:hover{
+        background: gainsboro;
+    }
+
+.mta-chat-content-chatw-head-title{
+    position    : absolute;
+    top         : 0;
+    bottom      : 0;
+    right       : 0;
+    left        : 0;
+}
+
+.mta-chat-msgs{
+    position    : absolute;
+    top         : 0.5px;
+    left        : 0.5px;
+    right       : 0.5px;
+    bottom      : 60px;
+    background  : #ffffff;
+}
+.mta-chat-msg-log{
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    border     : thin solid #888;
+    overflow-x : hidden;
+    overflow-y : scroll;
+}
+.mta-chat-msg-log-msg .chatname {
+    font-weight : 800;
+    color       : black;
+}
+.mta-chat-msg-log-msg, .mta-chat-msg-log-me{
+    border-style : groove;
+    border-width : thin 0 0 0;
+}
+.mta-chat-msg-log-me{
+    text-align: right;
+}
+.mta-chat-msg-log-me .chatname {
+    font-weight : 800;
+    color       : #484;
+}
+
+.mta-chat-msg-form{
+    position    : absolute;
+    height      : 60px;
+    left        : 0;
+    right       : 0;
+    bottom      : 0;
+    border-style : solid;
+    border-width : thin 0 thin 0;
+}
+.mta-chat-msg-form input[type=text]{
+    float       : left;
+    width       : 75%;
+    height      : 100%;
+    padding     : 0.5em;
+    border      : 0;
+    background  : #fff;
+    color       : #404040;
+}
+    .mta-chat-msg-form input[type=text]:focus{
+        background  : #fff;
+    }
+.mta-chat-msg-form div{
+    float   : left;
+    width   : 25%;
+    height  : 100%;
+    text-align: center;
+    color   : #fff;
+    font-weight: 800;
+    cursor : pointer;
+}
+    .mta-chat-msg-form div:hover{
+        background-color: #444;
+        color : #ff0;
+    }

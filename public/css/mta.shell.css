@@ -1,0 +1,86 @@
+/*
+ * mta.shell.css
+ * Shell styles
+*/
+.mta-shell-head, .mta-shell-head-logo,
+.mta-shell-head-acct, .mta-shell-head-option,
+.mta-shell-main, .mta-shell-main-nav, .mta-shell-main-content,
+.mta-shell-chat, .mta-shell-friends-list, 
+.mta-shell-friends-dock{
+	position : absolute;
+}
+.mta-shell-head{
+  top    		:	0;
+  left   		:	0;
+  right  		: 	0;
+  height 		: 	40px;
+  background	: 	white;
+}
+.mta-shell-head-logo {
+  top    	:	4px;
+  left   	: 	8px;
+  height 	: 	32px;
+  width  	: 	128px;
+}
+  .mta-shell-head-logo h1{
+    font   : 800 22px/22px Arial, Helvatica, sans-serif;
+    margin : 0;
+  }
+  .mta-shell-head-logo p{
+    font   : 800 10px/10px Arial, Helvatica, sans-serif;
+    margin : 0;
+  }
+
+.mta-shell-head-acct{
+  top           : 4px;
+  right         : 50px;
+  width         : 150px;
+  height        : 32px;
+  line-height   : 32px;
+  color         : black;
+  text-align    : center;
+  cursor        : pointer;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  border-style :  solid;
+  border-width :  thin thin thin thin;
+  border-color :  #888;
+}
+.mta-shell-head-option{
+	top			: 4px;
+	right 		: 2px;
+	width 		: 48px;
+	height 		: 32px; 
+	background	: lightgoldenrodyellow;
+}
+
+
+.mta-shell-main{
+  top    		:	 40px;
+  left   		:	 0;
+  bottom 		:	 0;
+  right  		:	 0;
+  background	:	 white;
+}
+.mta-shell-main-nav{
+  top		 : 0;
+  bottom     : 0;
+  width      : 200px;
+  background : whitesmoke;
+  z-index    : 1;
+}
+  .mta-x-closed .mta-shell-main-nav{
+    width   : 0;
+  }
+.mta-shell-main-content{
+  top		 : 0;
+  bottom     : 0;
+  left 		 : 200px;
+  right		 : 0;
+  background-image : url('../img/back.jpg');
+}
+  .mta-x-closed .mta-shell-main-content{
+    left  : 0;
+  }
+
+
